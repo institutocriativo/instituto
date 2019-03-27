@@ -1,0 +1,68 @@
+<h1>Inscrições</h1>
+
+<div class="submissions" id="submissions">
+        <div class="submission table-top">
+                <div class="id">Matrícula</div>
+                <div class="title">Título</div>
+                <div class="cpf">CPF</div>
+                <div class="category">Categoria</div>
+                <div class="status">Status</div>
+        </div>
+</div>
+<hr/>
+<form name="logout" id="logout" method="post" action="admin.php">
+    <input type="hidden" name="method" id="method" value="logout"/>
+    <input type="submit" class="submit" value="logout"/>
+</form>
+<script>
+    const submissions = document.querySelector("#submissions");
+    const detailed = document.querySelector("#detailed");
+    let dark = true;
+    const addProject = (id, title, cpf, category, status) => {
+        dark = dark?false:true;
+        submissions.innerHTML += 
+`<a href="?id=${id}"><div class="submission ${dark?"darkrow":""}">
+    <div class="id">${id}</div>
+    <div class="title">${title}</div>
+    <div class="cpf">${cpf}</div>
+    <div class="category">${category}</div>
+    <div class="status">${status}</div>
+</div></a>`;
+    }
+    const addDetailed = (id, firstname , secondname, rg, cpf, cep, street, street2, 
+            number, area, city, state, email, ddd1, phone1, ddd2, phone2, role, degree, institution, 
+            unity, category, theme, title, date, video, summary, members, partners, pdf, status) => {
+        submissions.innerHTML = 
+`<div class="deatiled">
+    <div class="id"><p><strong>Matrícula: </strong>${id}</p></div>
+    <h3> Responsável </h3>
+    <div class="detname"><p><strong>Nome: </strong>${firstname} ${secondname}</p></div>
+    <div class="detdata"><strong>RG:</strong> ${rg} <strong>CPF:</strong> ${cpf}</div>
+    <div class="detaddress"><p><strong>Endereço: </strong>${cep}<br/>${street}, ${number}, ${area}, ${city} - ${state}<br/>${street2}</div>
+    <div class="detcontact"><p><strong>Email: </strong>${email}</p></div>
+    <div class="detphone1"><p><strong>Telefone 1: </strong>(${ddd1}) ${phone1}</p></div>
+    <div class="detphone2"><p><strong>Telefone 2: </strong>(${ddd2}) ${phone2}</p></div>
+    <div class="detjob"><p><strong>Profissão: </strong>${role} <strong>Formação: </strong>${degree}</p></div>
+    <div class="pdf"><p><a href="pdf2018/${cpf}${category}.pdf">Comprovante</a></p></div>
+    <h3> Projeto </h3>
+    
+    <div class="detproject"><p><strong>Título: </strong>${title} <strong>Tema: </strong> ${theme} <strong>Categoria: </strong>${category}</p></div>
+    <div class="detinst"><p><strong>Instituição: </strong>${institution} <strong>Profissão: </strong> ${unity}</p></div>
+    <div class="detdate"><strong>Data de implementação: </strong>${date}</div>
+    <div class="detvideo"><p><strong>Link do vídeo: </strong><a href="${video}">${video}</a></p></div>
+    <p><strong>Resumo do projeto:</strong></p>
+    <blockquote>${summary}</blockquote>
+    <p><strong>Membros:</strong></p>
+    <blockquote>${members}</blockquote>
+    <p><strong>Parceiros:</strong></p>
+    <blockquote>${partners}</blockquote>
+    <h3>Status do Projeto</h3>
+    <form name="update" id="update" method="post" action="admin.php">
+        <input type="hidden" name="method" id="method" value="update"/>
+        <input type="hidden" name="id" id="id" value="${id}"/>
+        <textarea class="status" name="status">${status}</textarea>
+        <input type="submit" class="submit" value="Atualizar status"/>
+    </form>
+</div>`;
+    }
+</script>

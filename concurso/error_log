@@ -1,0 +1,17 @@
+[18-Jul-2018 18:07:19 America/Chicago] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /home/instit93/public_html/concurso/inscricao.php on line 419
+[18-Jul-2018 19:25:20 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/instit93/public_html/concurso/inscricao.php on line 433
+[18-Jul-2018 19:25:46 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/instit93/public_html/concurso/inscricao.php on line 433
+[18-Jul-2018 19:25:47 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/instit93/public_html/concurso/inscricao.php on line 433
+[18-Jul-2018 19:25:57 America/Chicago] PHP Parse error:  syntax error, unexpected '"The file "' (T_CONSTANT_ENCAPSED_STRING) in /home/instit93/public_html/concurso/inscricao.php on line 523
+[18-Jul-2018 19:25:57 America/Chicago] PHP Parse error:  syntax error, unexpected '"The file "' (T_CONSTANT_ENCAPSED_STRING) in /home/instit93/public_html/concurso/inscricao.php on line 523
+[18-Jul-2018 19:26:44 America/Chicago] PHP Parse error:  syntax error, unexpected '"The file "' (T_CONSTANT_ENCAPSED_STRING) in /home/instit93/public_html/concurso/inscricao.php on line 523
+[18-Jul-2018 19:26:44 America/Chicago] PHP Parse error:  syntax error, unexpected '"The file "' (T_CONSTANT_ENCAPSED_STRING) in /home/instit93/public_html/concurso/inscricao.php on line 523
+[18-Jul-2018 19:26:50 America/Chicago] PHP Parse error:  syntax error, unexpected '"The file "' (T_CONSTANT_ENCAPSED_STRING) in /home/instit93/public_html/concurso/inscricao.php on line 523
+[18-Jul-2018 19:26:50 America/Chicago] PHP Parse error:  syntax error, unexpected '"The file "' (T_CONSTANT_ENCAPSED_STRING) in /home/instit93/public_html/concurso/inscricao.php on line 523
+[18-Jul-2018 19:27:59 America/Chicago] PHP Warning:  move_uploaded_file(~/pdf2018/47353085800EJA.pdf): failed to open stream: No such file or directory in /home/instit93/public_html/concurso/inscricao.php on line 522
+[18-Jul-2018 19:27:59 America/Chicago] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpyGaBHZ' to '~/pdf2018/47353085800EJA.pdf' in /home/instit93/public_html/concurso/inscricao.php on line 522
+[18-Jul-2018 19:30:14 America/Chicago] PHP Warning:  move_uploaded_file(~/pdf2018/47353085800XA.pdf): failed to open stream: No such file or directory in /home/instit93/public_html/concurso/inscricao.php on line 522
+[18-Jul-2018 19:30:14 America/Chicago] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpP5pmeq' to '~/pdf2018/47353085800XA.pdf' in /home/instit93/public_html/concurso/inscricao.php on line 522
+[18-Jul-2018 19:43:28 America/Chicago] PHP Fatal error:  Call to undefined function sendEmail() in /home/instit93/public_html/concurso/inscricao.php on line 569
+[18-Jul-2018 19:56:44 America/Chicago] PHP Parse error:  syntax error, unexpected '[' in /home/instit93/public_html/concurso/inscricao.php on line 562
+[18-Jul-2018 23:30:48 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/instit93/public_html/concurso/consulta.php on line 82

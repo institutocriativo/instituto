@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: 'Playtime';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/playtime.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/raleway.ttf");
+}
+
+:root {
+    --header-bg-color: rgb(0, 113, 140);
+    --red: rgb(255, 2, 76);
+    --green: rgb(0, 113, 140);
+    --yellow: rgb(255, 224, 59);
+    --neon: rgb(90, 235, 229);
+    --gray: rgb(224, 224, 224);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Raleway' ,'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Playtime' ,'Open Sans', sans-serif;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: var(--green);
+}
+
+h3 {
+    font-family: 'Playtime' ,'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--green);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.2rem;
+    padding-bottom: 0.2rem;
+}
+
+input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+}
+
+form {
+    max-width: 33rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.observation {
+    font-style: italic;
+}
+
+.ddd {
+    max-width: 1.8rem;
+}
+
+.phone {
+    max-width: 8rem;
+}
+
+.error {
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+}
+
+/*Header stuff*/
+
+#header {
+    z-index: 99;
+    background-color: var(--header-bg-color);
+    color: white;
+    font-size: 1rem;
+    height: 51px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor-button {
+    height: 1em;
+    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
+    padding-right: 2rem;
+}
+
+
+
+.submit {
+    background-color: var(--red);
+    color: white;
+    padding: 0.3rem 2rem 0.4rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--red);
+    font-size: 1.2rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.submit:hover {
+    background-color: white;
+    color: var(--red);
+}

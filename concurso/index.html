@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Concurso Educação Criativa</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <!--Site container-->
+        <div id="container">
+            <section id="inicio" class="banner row">
+                <div class="bluegrad"></div>
+                <div class="img-hands">
+                    <img src="img/hands.svg"/>
+                </div>
+                <div class="img-hand1">
+                    <img src="img/hand1.svg"/>
+                </div>
+                <div class="overlay">
+                    <img src="img/logo.svg"/>
+                    <img class="slogan" src="img/slogan.svg"/>
+                    <div class="overlay-buttons">
+                        <a href="consulta.php"><div class="overlay-button">consulte a inscrição</div></a>
+                    </div>
+                </div>
+                <div class="premio">
+                    <h1>O prêmio</h1>
+                    <p>É uma iniciativa do Instituto de Educação Criativa e Inovadora para premiar educadores e estudantes que se destacam no desenvolvimento de projetos, capazes de solucionar problemas do dia a dia, de forma autêntica, criativa e original.</p>
+                    <div class="premios">
+                        <div class="container-premio">
+                            <h3>Para todos os inscritos:</h3>
+                            <img class="premio-img" src="img/guarantee-certificate.svg" alt="Ilustração de certificado"/>
+                            <p>Capacitação online de Criatividade com carga horária de até 4 horas.</p>
+                        </div>
+                        <div class="container-premio">
+                            <h3>Para os 80 finalistas:</h3>
+                            <img class="premio-img" src="img/jigsaw.svg" alt="Ilustração de um quebra-cabeças"/>
+                            <p>Bolsa de estudos do Programa de Bolsas Educador Criativo e inovador, no valor equivalente a R$ 2.000,00.</p>
+                        </div>
+                        <div class="container-premio">
+                            <h3>Para o melhor projeto de cada categoria:</h3>
+                            <img class="premio-img" src="img/money-bag.svg" alt="Ilustração de um saco de moedas">
+                            <p>Bolsa de estudos do Programa de Bolsas Educador Criativo e inovador, no valor equivalente a R$ 10.000,00.</p>
+                        </div>
+                        <div class="container-premio">
+                            <h3>Ao projeto vencedor:</h3>
+                            <img class="premio-img" src="img/aeroplane.svg" alt="Ilustração de avião">
+                            <p>Uma turnê educacional internacional de cerca de uma semana, com transporte e hospedagem, no valor equivalente a R$ 25.000,00.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="regulamento" class="descricao row">
+                <div class="queminscreve">
+                    <h1>Quem pode se inscrever?</h1>
+                    <p>Qualquer Educador brasileiro - e que tenha um estudante envolvido em seu projeto - pode se inscrever até o dia 20 de outubro de 2018 em 8 categorias:
+                        <ul>
+                            <li>Educação Infantil</li>
+                            <li>Educação Fundamental I</li>
+                            <li>Educação Fundamental II</li>
+                            <li>Ensino Médio</li>
+                            <li>Educação de Jovens e Adultos</li>
+                            <li>Ensino Superior</li>
+                            <li>Xadrez</li>
+                            <li>Hipnoterapia</li>
+                        </ul>
+                    </p>
+                    <a href="regulamento.pdf" target="_blank" class="no-stretch"><div class="overlay-button-n fix-padding-regulamento fix-width-regulamento">veja o regulamento </div></a>
+                </div>
+                <div class="img-hand2">
+                    <img src="img/hand2.svg"/>
+                </div>
+            </section>
+            <section class="cronograma row">
+                <h1>Cronograma</h1>
+                <img src="img/cronograma.svg"/>
+            </section>
+            <section class="participe row">
+                <h1>Participe dessa iniciativa</h1>
+                <div class="overlay-buttons">
+                    <a href="consulta.php"><div class="overlay-button">consulte a inscrição</div></a>
+                </div>
+            </section>
+            <section class="promovido row">
+                <div>
+                    <p>Conheça os idealizadores <br/> deste grande prêmio:</p>
+                </div>
+                <a href="http://creativedu.org.br"><img class="partner" src="img/IC.svg"/></a>
+                <a href="http://institutocriativo.org.br"><img class="partner" src="img/ITC.svg"/></a>
+                <a href="http://hipnoedu.com.br"><img class="partner" src="img/HE.svg"/></a>
+                <a href="http://livrariacultura.com.br"><img class="partner" src="img/LC.svg"/></a>
+                <a href="http://usp.br"><img class="partner" src="img/USP.svg"/></a>
+            </section>
+            <section class="madeby row">
+                    <div>Site made by <a href="https://twitter.com/minifyit" title="@minifyit">Vitor Silva</a></div>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </section>
+        </div>
+        <div id="header">
+            <a onclick="smooth('#inicio')"><div class="anchor-button button-inicio">Início</div></a>
+            <a onclick="smooth('#regulamento')"><div class="anchor-button">regulamento</div></a>
+            <a href="consulta.php"><div class="anchor-button popup-button">consultar inscrição</div></a>
+        </div>
+        <!--Site scripts-->
+        <script src="script.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122512144-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122512144-1');
+        </script>
+    </body>
+</html>

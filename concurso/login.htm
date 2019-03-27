@@ -1,0 +1,59 @@
+<h1>Login</h1>
+<form name="login" id="login" method="post" action="admin.php">
+    <p>Usuário</p>
+    <input type="text" name="user" value=""/>
+    <p>Senha</p>
+    <input type="password" name="password" id="password" value=""/>
+    <input type="hidden" name="method" id="method" value="login"/>
+    <input type="hidden" name="hash" id="hash" value=""/>
+</form>
+<div onclick="loginsubmit();" class="btn">
+    Acessar
+</div>
+<h1>Nova senha</h1>
+<form name="updatepassword" id="updatepassword" method="post" action="admin.php">
+    <p>Usuário</p>
+    <input type="text" name="user" value=""/>
+    <p>Senha Antiga</p>
+    <input type="password" name="oldpassword" id="oldpassword" value=""/>
+    <p>Nova Senha</p>
+    <input type="password" name="newpassword" id="newpassword" value=""/>
+    <p>Repetir Nova Senha</p>
+    <input type="password" name="newpassword2" id="newpassword2" value=""/>
+    <input type="hidden" name="method" id="method" value="newpassword"/>
+    <div id="error"></div>
+</form>
+<div onclick="newpasswordsubmit();" class="btn">
+    Alterar Senha
+</div>
+<script src="js/sha.js"></script>
+<script>
+    function hashkey(str) {
+        var hashgen = new jsSHA("SHA-256", "TEXT");
+        hashgen.update(str);
+        return hashgen.getHash("HEX");
+    }
+    const loginsubmit = () => {
+        const form = document.querySelector("#login");
+        const password = document.querySelector("#password");
+        const hash = document.querySelector("#hash");
+        hash.value = hashkey(password.value);
+        password.value = "";
+        form.submit();
+    }
+    const newpasswordsubmit = () => {
+        const form = document.querySelector("#updatepassword");
+        const oldpassword = document.querySelector("#oldpassword");
+        const newpassword = document.querySelector("#newpassword");
+        const newpassword2 = document.querySelector("#newpassword2");
+        const error = document.querySelector("#error");
+        if(newpassword.value === newpassword2.value) {
+            oldpassword.value = hashkey(oldpassword.value);
+            newpassword.value = hashkey(newpassword.value);
+            newpassword2.value = "";
+            form.submit();
+        } else {
+            error.innerHTML = "As senhas não coincidem";
+        }
+    }
+</script>

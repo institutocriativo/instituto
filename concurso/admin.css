@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    --header-bg-color: rgb(0, 113, 140);
+    --red: rgb(255, 2, 76);
+    --green: rgb(0, 113, 140);
+    --yellow: rgb(255, 224, 59);
+    --neon: rgb(90, 235, 229);
+    --gray: rgb(224, 224, 224);
+    --table-gray: rgb(200, 200, 200);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: var(--green);
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--green);
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.2rem;
+    padding-bottom: 0.2rem;
+}
+
+input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+}
+
+blockquote {
+    max-width: 40rem;
+}
+
+.submissions {
+    display: inline-flex;
+    flex-flow: column nowrap;
+}
+
+.btn, .submit {
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 1.2rem;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    width: 10rem;
+    text-align: center;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0.3rem 0rem;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.btn:hover, .submit:hover {
+    cursor: pointer;
+    color: var(--red);
+    background-color: white;
+}
+
+.darkrow {
+    background-color: var(--table-gray);
+}
+
+.table-top {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.submission {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+.submissions {
+    display: inline-flex;
+    flex-flow: column nowrap;
+}
+
+#container {
+    min-width: 30rem;
+    align-items: flex-start;
+}
+
+#header {
+    z-index: 99;
+    background-color: var(--header-bg-color);
+    color: white;
+    font-size: 1rem;
+    height: 51px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+#error {
+    margin: 1rem 0rem 1rem 0rem;
+    color: red;
+}
+
+#update {
+    display: inline-flex;
+    flex-flow: column nowrap;
+}
+
+#update>textarea {
+    height: 2rem;
+    width: 20rem;
+    font-size: 1.2rem;
+}
